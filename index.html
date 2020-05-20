@@ -1,0 +1,714 @@
+<!-- DOCTYPE LANG -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//FR" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+ 	<head>
+		<!-- TITRE DU SITE -->
+		<title>Générateur de code barre | Plata Ô Oro (Shop)</title>
+		<meta name="keywords" content="Générateur de code barre | Plata Ô Oro (Shop)">
+		<meta name="description" content="Site officiel de génération de code barre.">
+		<!-- META BASIQUE -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+		<meta http-equiv="X-UA-Compatible" content="IE=10" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- LINK + SCRIPT DU SITE + STYLE DU SITE -->
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/favicon.png">
+		<link rel="shortcut icon" href="assets/img/favicon/favicon.png">
+		<link rel="icon" type="image/png" href="assets/img/favicon/favicon.png" />
+        <link rel="icon" type="image/png" href="assets/img/favicon/favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .dark-mode {
+                background-color: black;
+                color: white;
+            }
+
+            /* Style the body */
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                background-color: white;
+                color: black;
+            }
+
+            /* Header/logo Title */
+            .header {
+                padding: 80px;
+                text-align: center;
+                background: #1313139d;
+                color: white;
+                -webkit-backdrop-filter: blur(25px);
+                backdrop-filter: blur(25px);
+            }
+
+            /* Increase the font size of the heading */
+            .header h1 {
+                font-size: 40px;
+            }
+
+            /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+            .navbar {
+                overflow: hidden;
+                background-color: rgba(51, 51, 51, 0.582);
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+                -webkit-backdrop-filter: blur(55px);
+                backdrop-filter: blur(55px);
+            }
+
+            /* Style the navigation bar links */
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+            /* Right-aligned link */
+            .navbar a.right {
+                float: right;
+            }
+
+            /* Change color on hover */
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* Active/current link */
+            .navbar a.active {
+                background-color: rgba(0, 0, 0, 0.425);
+                color: white;
+                -webkit-backdrop-filter: blur(258px);
+                backdrop-filter: blur(258px);
+            }
+
+            /* Column container */
+            .row {  
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+            }
+
+            /* Create two unequal columns that sits next to each other */
+            /* Sidebar/left column */
+            .side {
+                -ms-flex: 30%; /* IE10 */
+                flex: 30%;
+                background-color: #f1f1f134;
+                padding: 20px;
+                -webkit-backdrop-filter: blur(85px);
+                backdrop-filter: blur(85px);
+            }
+
+            /* Main column */
+            .main {   
+                -ms-flex: 70%; /* IE10 */
+                flex: 70%;
+                background-color: rgba(255, 255, 255, 0);
+                padding: 20px;
+                -webkit-backdrop-filter: blur(15px);
+                backdrop-filter: blur(15px);
+            }
+
+            /* Fake image, just for this example */
+            .fakeimg {
+                background-color: #aaa;
+                width: 100%;
+                padding: 20px;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: rgba(92, 92, 92, 0.479);
+                -webkit-backdrop-filter: blur(15px);
+                backdrop-filter: blur(15px);
+            }
+
+            /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 700px) {
+                .row {   
+                    flex-direction: column;
+                }
+            }
+
+            .topnav {
+  overflow: hidden;
+  background-color: #00000069;
+  -webkit-backdrop-filter: blur(55px);
+                backdrop-filter: blur(55px);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(192, 192, 192);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgba(0, 0, 0, 0.301);
+  color: white;
+  -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: rgba(221, 221, 221, 0.425);
+  -webkit-backdrop-filter: blur(255px);
+  backdrop-filter: blur(255px);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+            .topnav .search-container button:hover {
+                background: rgba(221, 221, 221, 0.425);
+  -webkit-backdrop-filter: blur(255px);
+  backdrop-filter: blur(255px);
+            }
+
+            /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+            @media screen and (max-width: 400px) {
+                .navbar a {
+                    float: none;
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                .topnav .search-container {
+                    float: none;
+                }
+                .topnav a, .topnav input[type=text], .topnav .search-container button {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 14px;
+                }
+                .topnav input[type=text] {
+                border: 1px solid #ccc;  
+            }
+        }
+        .slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+        </style>
+        <style type="text/css">
+		
+        body{
+        
+            background-image: url('https://images.wallpapersden.com/image/download/huawei-4k-stock-abstract_66336_1920x1080.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: white;
+            color: black;
+        }
+
+        .div_cvs{
+        width:515px;
+        margin:auto;
+        background:#3B3738;
+        padding:10px;
+        }
+
+        input:in-range{
+
+        width:200px;
+        background:#3B3738;
+        margin:5px;
+        }
+
+        .div_range{
+        display:inline-block;
+        background:#3B3738;
+        height:30px
+        }
+
+        .inp_coul{
+        border:none;
+        width:210px;
+        height:25px;
+        background:#3B3738;
+        padding:2px;
+        cursor:pointer;
+        }
+
+        .z_btn{
+
+        float:right;
+        display:inline-block;
+        margin-left:10px;
+        margin-top:-250px;
+        background:#3B3738;
+        padding:20px;
+        height:200px;
+
+        }
+
+        .z_btn button, .z_btn_g{
+
+        width:100%;
+        background:#ff5959;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid #a12727;
+        border-radius: 2px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#992727));
+        background: -moz-linear-gradient(top, #ff4a4a, #992727);
+        background: linear-gradient(to bottom, #ff4a4a, #992727);
+        text-shadow: #591717 1px 1px 1px;
+         color: #ffffff;
+        text-decoration: none;
+        cursor:pointer;
+        margin-top:5px;
+        }
+
+        .z_btn button:hover, .bouton_fic:hover{
+        background: #ff5959;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#b62f2f));
+        background: -moz-linear-gradient(top, #ff5959, #b62f2f);
+        background: linear-gradient(to bottom, #ff5959, #b62f2f);
+        }
+
+
+        .div_g{
+        display:inline-block;
+        background:#3B3738;
+        padding:5px
+        }
+        .z_btn_g{
+        margin-top:0px;
+        width:200px;
+        height:20px;
+        }
+
+        .div_code{
+
+        }
+
+        .inp_code{
+        width:200px;
+        height:20px;
+        font-size:22px;
+        }
+
+        .cadre{
+
+        position:fixed;
+        background:#3B3738;
+        color: white;
+        font-family: sans-serif;
+        border-radius: 3px;
+        font-size: smaller;
+        text-align:center;
+        min-height:100px;
+        width:320px;
+        border:2px solid #111111;
+        border-radius:10px;
+        box-shadow:0 0 15px #aaa;
+
+        }   
+
+        .cadre span{
+            color:red;
+        }
+
+        .input_fic{
+        margin:20px;
+        border-radius:5px;
+        }
+
+        .bouton_fic{
+    margin:10px;
+    border: 1px solid #a12727;
+    border-radius: 2px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#992727));
+    background: -moz-linear-gradient(top, #ff4a4a, #992727);
+    background: linear-gradient(to bottom, #ff4a4a, #992727);
+    text-shadow: #591717 1px 1px 1px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    width:100px;
+    cursor:pointer;
+}
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+        </style>
+        <style>
+    
+            /* BLUR : Blur */
+            
+            #Blur {
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            }
+            
+            /* BLUR : Header / En-Tête */
+            
+            #HeaderBlur {
+            -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+            }
+                
+            /* BLUR : Fond */   
+                
+            #FondBlur {
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            }
+                
+            /* BLUR : Basic */   
+                
+            #BasicBlur {
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            }
+            
+            /* BLUR : Pour photo */   
+                
+            #BlurPicture {
+            -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+            }
+            .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.589);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 88px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #a0a0a0;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #ff0000;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 24px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 10px;}
+  .sidenav a {font-size: 11px;}
+}
+/* width */
+::-webkit-scrollbar {
+      			width: 5px;
+   			}
+    
+    	/* Track */
+    		::-webkit-scrollbar-track {
+       			box-shadow: inset 0 0 5px rgb(0, 0, 0); 
+       			border-radius: 5px;
+    		}
+    
+    	/* Handle */
+    		::-webkit-scrollbar-thumb {
+       			background: rgb(46, 46, 46); 
+       			border-radius: 5px;
+    		}
+    
+    	/* Handle on hover */
+    		::-webkit-scrollbar-thumb:hover {
+       			background: rgb(255, 174, 0); 
+    		}
+            </style>
+        <script type="text/javascript" src="assets/js/k_code_13.js"></script>
+        <!-- CANONICAL SEO -->
+        <link rel="canonical" href="https://plata-o-oro.github.io/generator/index.html"/>
+        <!-- META FACEBOOK -->
+        <meta property="og:url" content="https://plata-o-oro.github.io/generator/index.html" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Générateur de code barre | Plata Ô Oro (Shop)" />
+        <meta property="og:description" content="Site officiel de génération de code barre."/>
+    </head>
+<body>
+
+<div class="header">
+    <h2>APERÇU</h2>
+    <div class="div_g" >
+        <canvas style=" background:white;margin:auto;" id="canvas"height="160" width="515"></canvas>
+    </div>
+    <br>
+</div>
+
+<div class="topnav">
+    <a onclick="openNav()">&#9776; Menu des options</a>
+    <a class="active" href="index.html">Accueil</a>
+    <!--<a href="#about">À propos.</a>-->
+    <!--<a href="#contact">Support</a>-->
+    <div class="search-container">
+        <input type="text" placeholder="13 chiffres max..." value="" maxlength="13" width=50 id="code" required>
+        <button type="submit" onclick="k_barre.crea_barre_b()"><i class="fa fa-search"></i></button>
+    </div>
+</div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a onclick="k_barre.boite('image')">Enregistrer le code</a>
+    <a onclick="k_barre.boite('fichier')">Enregistrer la configuration</a>
+    <a onclick="k_barre.fichier_clic(event)">Charger configuration</a>
+    <a onclick="k_barre.conserver(event)">Memoriser configuration</a>
+    <a onclick="k_barre.charger(event)">Configuration memorisé</a>
+    <input type="file" id="fileinput" style="display:none" onchange="k_barre.charger_fichier(event)">
+</div>
+
+<div class="row">
+    <div class="side">
+        <h2>Paramètrage :</h2>
+        <div class="content">
+            Largeur du code barre :
+		<br>
+		<div class="slidecontainer">
+	 		<input type="range" min="1" max="10" value="5" id="largeur" onchange ="k_barre.dimension(this)">
+        </div>
+        <br>
+        Hauteur code barre :
+		<br>
+		<div class="slidecontainer">
+	 		<input type="range" min="20" max="200" value="80"  id="hauteur"onchange ="k_barre.dimension_h(this)">
+        </div>
+        <br>
+        Taille de la bordure :
+	 	<br>
+	 	<div class="slidecontainer">
+	 		<input type="range" min="0" max="50" value="20" id="bordure" onchange ="k_barre.bordure(this)">
+        </div>
+        <br>
+        Bordure de gauche :
+	 	<br>
+	 	<div class="slidecontainer">
+	 		<input type="range" min="0" max="100" value="25" id="bordure_g" onchange ="k_barre.bordure_gauche(this)">
+        </div>
+        <br/>
+        Taille de la police :
+	 	<br>
+	 	<div class="slidecontainer">
+	 		<input type="range" min="5" max="80" value="40" id="police" onchange ="k_barre.police(this)">
+	 	</div>
+        <br>
+        Positionnement du texte :
+	 	<br>
+	 	<div class="slidecontainer">
+	 		<input type="range" min="10" max="300" value="140" id="posi_texte" onchange ="k_barre.posilice(this)">
+	 	</div>
+        <br>
+        Bordure du bas :
+	 	<br>
+	 	<div class="slidecontainer">
+	 		<input type="range" min="0" max="100" value="20" id="bordure_b" onchange ="k_barre.bordure_bas(this)">
+	 	</div>
+        <br>
+        Couleur du fond :
+	 	<br>
+	 	<div class="slidecontainer">
+	 		<input class="inp_coul"  type="color" value="#fad345" id="coul_fond" onchange ="k_barre.coul_fond(this)">
+	 	</div>
+        </div>
+        <div class="topnav" >
+            
+       </div>
+      </div>
+      <div class="main">
+        <!--
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <br>
+        -->
+        <h2>BIENVENUE SUR LE GENERATEUR DE CODE BARRE</h2>
+        <h5>Par : Plata Ô Oro - Le : 20/05/2020</h5>
+        <div class="fakeimg" style="height:200px;" >Picture bar code - Loadings...</div>
+        <br>
+    </div>
+      
+</div>
+
+<div class="footer">
+  <h4>Générateur de code barre | Plata Ô Oro (Shop)</h4>
+  <p>V.1.0.0</p><br/>
+  <!--
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider" onclick="myFunction()"></span>
+  </label>-->
+</div>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "350px";
+      document.getElementById("main").style.marginLeft = "350px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+    </script>
+</body>
+</html>
