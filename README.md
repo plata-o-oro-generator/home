@@ -1,11 +1,8 @@
-# [PLATA Ô ORO](https://plata-o-oro-generator-barcode.tk/) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+# [PLATA Ô ORO](https://plata-o-oro-generator-barcode.tk/) | [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE] [![build][build-badge]][WEBSITE]
 
 ![alt text](https://plata-o-oro-generator-barcode.tk/assets/img//bg-1.jpg "PLATA Ô ORO")
 
-
 **[PLATA Ô ORO](https://plata-o-oro-generator-barcode.tk/)** est un kit basique (HTML / CSS5 / JAVASCRIPT) réactif fourni gratuitement par Plata Ô Oro. Il s'agit d'un magnifique kit d'interface utilisateur multiplateforme comprenant plus de 70 éléments et 3 modèles.
-
-Now vous aidera à créer un site Web simple et épuré, parfaitement adapté au design noir d'aujourd'hui. Il est construit en utilisant le système de grille à 12 colonnes, avec des composants conçus pour s'emboîter parfaitement. Il utilise des couleurs vives, une belle typographie, une photographie claire et des arrangements spacieux.
 
 ## Complex Documentation
 
@@ -19,7 +16,8 @@ PLATA Ô ORO est construit au-dessus de la base tant attendue (HTML / CSS5 / JAV
 
 
 [CHANGELOG]: https://plata-o-oro-generator-barcode.tk/CHANGELOG.md
-[LICENSE]: https://www.dmca.com/Protection/Status.aspx?ID=fdab2c20-d538-4478-b373-a92c8a268b66&refurl=https://v2-team-tmfdg.com/
-[version-badge]: https://img.shields.io/badge/version-2.0.0-grenne.svg
+[WEBSITE]: https://plata-o-oro-generator-barcode.tk/
+[LICENSE]: https://www.dmca.com/Protection/Status.aspx?ID=0b17f384-5cb7-47c5-a253-a2733e12f00c&refurl=https://plata-o-oro-generator-barcode.tk/
+[version-badge]: https://img.shields.io/badge/version-1.2.1-grenne.svg
 [license-badge]: https://img.shields.io/badge/license-MIT-purple.svg
-[build-badge]: https://img.shields.io/badge/build-1.0.0-purple.svg
+[build-badge]: https://img.shields.io/badge/build-1.2.1-purple.svg
