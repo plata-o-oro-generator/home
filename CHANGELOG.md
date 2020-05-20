@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.2.1] 20-05-2020
+### Mise à jour : Patch
+
+- Modification du Footer.
+
 ## [1.2.0] 20-05-2020
 ### Mise à jours mineur du site.
 
