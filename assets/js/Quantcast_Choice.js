@@ -94,9 +94,9 @@ var elem = document.createElement('script');
 		'Vendor Screen Save and Exit Button Text': 'Enregistrer et quitter',
 		'Initial Screen Body Text': 'Nos partenaires et nous-mêmes exploitons différentes technologies, telles que celle des cookies, et traitons vos données à caractère personnel, telles que les adresses IP et les identifiants de cookie, afin de personnaliser les publicités et les contenus en fonction de vos centres d’intérêt, d’évaluer la performance de ces publicités et contenus, et de recueillir des informations sur les publics qui les ont visionnés. Cliquez ci-dessous si vous consentez à l’utilisation de cette technologie et au traitement de vos données à caractère personnel en vue de ces objectifs. Vous pouvez changer d’avis et modifier votre consentement à tout moment en revenant sur ce site.',
 		'Initial Screen Body Text Option': 1,
-		'Publisher Logo': 'https://plata-o-oro.github.io/records-label-france/img/core-img/logo.png',
+		'Publisher Logo': 'https://plata-o-oro-generator-barcode.tk/assets/img/favicon/logo.png',
 		'Publisher Name': 'Plata Ô Oro',
 		'Publisher Purpose IDs': [1,2,3,4,5],
 		'Publisher Purpose Legitimate Interest IDs': [1,3,4,5],
-		'Post Consent Page': 'https://plata-o-oro.github.io/records-label-france/gdpr.html',
+		'Post Consent Page': 'https://www.dmca.com/compliance/plata-o-oro-generator-barcode.tk',
     });
