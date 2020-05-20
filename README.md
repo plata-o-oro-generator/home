@@ -1,6 +1,6 @@
 # [PLATA Ô ORO](https://plata-o-oro-generator-barcode.tk/) | [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE] [![build][build-badge]][WEBSITE]
 
-![alt text](https://plata-o-oro-generator-barcode.tk/assets/img//bg-1.jpg "PLATA Ô ORO")
+![alt text](https://plata-o-oro-generator-barcode.tk/assets/img/bg-1.jpg "PLATA Ô ORO")
 
 **[PLATA Ô ORO](https://plata-o-oro-generator-barcode.tk/)** est un kit basique (HTML / CSS5 / JAVASCRIPT) réactif fourni gratuitement par Plata Ô Oro. Il s'agit d'un magnifique kit d'interface utilisateur multiplateforme comprenant plus de 70 éléments et 3 modèles.
 
